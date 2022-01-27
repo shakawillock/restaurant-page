@@ -1,12 +1,12 @@
 export default function navigation() {
   const header = document.createElement('header');
-  const title = document.createElement('h3');
-  const titleText = document.createTextNode('Deli Divine');
+  const logo = document.createElement('h3');
+  const logoText = document.createTextNode('Pizza Palace');
   
-  title.classList.add('header__title');
-  title.append(titleText)
+  logo.classList.add('logo');
+  logo.append(logoText);
   header.classList.add('header');
-  header.append(title)
+  header.append(logo);
 
   const nav = document.createElement('nav');
   nav.classList.add('navbar');
@@ -19,7 +19,7 @@ export default function navigation() {
   const navLink1 = document.createElement('a');
   
   navLink1.setAttribute('href', '#');
-  navLink1.classList.add('navbar__link')
+  navLink1.classList.add('navbar__link');
   navLink1.appendChild(liText1);
   li1.classList.add('navbar__item');
   li1.appendChild(navLink1);
@@ -46,7 +46,7 @@ export default function navigation() {
 
   ul.append(li1, li2, li3);
   nav.appendChild(ul);
-  header.appendChild(nav)
+  header.appendChild(nav);
 
   return header;
 }

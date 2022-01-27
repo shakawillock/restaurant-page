@@ -2,12 +2,19 @@ export default function hero() {
   const section = document.createElement('section');
   section.classList.add('hero');
 
-  const paragraph = document.createElement('p');
-  const paragraphText = document.createTextNode('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.');
+  const heroTitle = document.createElement('p');
+  const heroText = document.createTextNode('Lorem ipsum dolor');
 
-  paragraph.classList.add('hero__text');
+  const paragraph = document.createElement('p');
+  const paragraphText = document.createTextNode('Lorem ipsum dolor sit amet, consectetur adipiscing elit');
+
+  heroTitle.appendChild(heroText);
   paragraph.appendChild(paragraphText);
 
-  section.append(paragraph);
+  heroTitle.classList.add('hero__title');
+  paragraph.classList.add('hero__text');
+
+
+  section.append(heroTitle, paragraph);
   return section;
 }
