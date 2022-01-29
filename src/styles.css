@@ -63,3 +63,33 @@ body {
 .hero__text {
   font-size: 1.25rem;
 }
+
+/* Menu */
+.menu {
+  padding-top: 5rem;
+  text-align: center;
+}
+
+.menu__header-title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.menu__item-title,
+.menu__item-description {
+  margin-bottom: .5rem;
+}
+
+.menu__item-title {
+  font-size: 2rem;
+}
+
+.menu__item-description {
+  font-size: 1.125rem;
+}
+
+.menu__item-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
