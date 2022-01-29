@@ -14,10 +14,14 @@ body {
   justify-content: space-between;
   padding: 1rem;
   background-color: #000;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 
 .logo {
   color: #fff;
+  font-size: 1.25rem;
 }
 
 .navbar__items {
@@ -26,12 +30,13 @@ body {
 }
 
 .navbar__item {
-  margin-right: 1rem;
+  margin-right: 2rem;
 }
 
 .navbar__link {
   text-decoration: none;
   color: #fff;
+  font-size: 1.125rem;
 }
 
 .container {
@@ -45,10 +50,16 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 90vh;
+  height: 100vh;
+  background: url('../src/pizza.jpg') no-repeat center center/cover;
+  color: #fff;
 }
 
 .hero__title {
-  font-size: 3rem;
+  font-size: 4rem;
   margin-bottom: 1rem;
+}
+
+.hero__text {
+  font-size: 1.25rem;
 }
