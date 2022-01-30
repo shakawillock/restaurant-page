@@ -2,6 +2,7 @@ import './styles.css';
 import navigation from './navigation.js';
 import hero from './hero.js';
 import menu from './menu.js';
+import contact from './contact.js';
 
 const content = document.querySelector('#content');
 content.append(navigation(), hero());
@@ -18,6 +19,11 @@ homeTab.addEventListener('click', () => {
 menuTab.addEventListener('click', () => {
   removeChildElement();
   content.append(menu());
+});
+
+contactTab.addEventListener('click', () => {
+  removeChildElement();
+  content.append(contact());
 });
 
 function removeChildElement() {

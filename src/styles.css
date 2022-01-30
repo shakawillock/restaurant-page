@@ -39,11 +39,6 @@ body {
   font-size: 1.125rem;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 /* Hero */
 .hero {
   display: flex;
@@ -64,13 +59,15 @@ body {
   font-size: 1.25rem;
 }
 
-/* Menu */
-.menu {
+/* Menu & Contact */
+.menu,
+.contact {
   padding-top: 5rem;
   text-align: center;
 }
 
-.menu__header-title {
+.menu__header-title,
+.contact__header-title {
   font-size: 3rem;
   margin-bottom: 2rem;
 }
@@ -80,11 +77,13 @@ body {
   margin-bottom: .5rem;
 }
 
-.menu__item-title {
+.menu__item-title,
+.contact__info-title {
   font-size: 2rem;
 }
 
-.menu__item-description {
+.menu__item-description,
+.contact__info-text {
   font-size: 1.125rem;
 }
 
@@ -92,4 +91,21 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 2rem;
+}
+
+.contact__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.contact__info {
+  flex-basis: 15%;
+}
+
+.contact__info-title {
+  margin-bottom: 1rem;
+}
+
+.contact__info-text {
+  margin-bottom: .7rem;
 }
