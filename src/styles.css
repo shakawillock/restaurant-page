@@ -93,13 +93,9 @@ body {
   margin-bottom: 2rem;
 }
 
-.contact__wrapper {
-  display: flex;
-  justify-content: center;
-}
-
 .contact__info {
   flex-basis: 15%;
+  margin-bottom: 3rem;
 }
 
 .contact__info-title {
@@ -108,4 +104,40 @@ body {
 
 .contact__info-text {
   margin-bottom: .7rem;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .logo {
+    margin-bottom: .5rem;
+  }
+
+  .hero__title {
+    font-size: 3rem;
+  }
+
+  .menu,
+  .contact {
+    padding-top: 8rem;
+  }
+
+  .menu__header-title,
+  .contact__header-title {
+    font-size: 2.5rem;
+  }
+
+  .menu__item-title,
+  .contact__info-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero__title {
+    font-size: 2rem;
+  }
 }
